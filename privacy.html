@@ -42,7 +42,7 @@
       <ul>
         <li><strong>Account identity.</strong> When you sign in with Apple, we receive an anonymised user ID and, optionally, your name and email. We store the ID and a display name in our database. We never see your Apple ID credentials.</li>
         <li><strong>Your questions and answers.</strong> Each conversation thread -- your question and the AI-generated answer -- is stored in our database (Firebase Firestore) linked to your account so you can review your history.</li>
-        <li><strong>Subscription status.</strong> If you purchase Pro or Max, RevenueCat (our payment processor) sends us a record of your entitlement. We store your subscription state to unlock features. RevenueCat processes payments; we never touch your payment card details.</li>
+        <li><strong>Subscription status.</strong> If you purchase Pro or Max, RevenueCat (our payment processor) sends us a record of your entitlement. We store your subscription state to enable Pro and Max features. RevenueCat processes payments; we never touch your payment card details.</li>
         <li><strong>Usage data.</strong> We record when you sent a question, the approximate token count, and whether the request succeeded. This powers rate limiting and lets us diagnose problems.</li>
         <li><strong>Crash reports.</strong> Firebase Crashlytics may collect anonymised crash traces if the app crashes. No question content is included in crash reports.</li>
       </ul>
