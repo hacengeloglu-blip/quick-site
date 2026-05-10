@@ -1,0 +1,349 @@
+/* Quick: Fast AI — Marketing Site Styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #F5F0E6;
+  --cream-elevated: #FBF6E8;
+  --navy: #0F1B33;
+  --yellow: #F2CF4C;
+  --navy-border: #0F1B33;
+  --text-muted: #4A5568;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--navy);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Layout */
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(15, 27, 51, 0.08);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--navy);
+}
+
+.wordmark img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.wordmark span {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* Hero */
+
+.hero {
+  padding: 80px 0 72px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.hero .subhead {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+  line-height: 1.5;
+}
+
+.app-store {
+  display: inline-block;
+  background-color: var(--yellow);
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: opacity 0.15s;
+}
+
+.app-store:hover {
+  opacity: 0.85;
+}
+
+/* Sections */
+
+section {
+  padding: 64px 0;
+  border-top: 1px solid rgba(15, 27, 51, 0.08);
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* How it works */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.step-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.step p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Icon glyphs via SVG inline */
+
+.icon-bolt,
+.icon-chat,
+.icon-check {
+  display: block;
+  margin: 0 auto 12px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Pricing */
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pricing-card {
+  background-color: var(--cream-elevated);
+  border: 1px solid var(--navy);
+  border-radius: 16px;
+  padding: 28px 24px;
+}
+
+.pricing-card .plan-name {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.pricing-card .plan-price {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.pricing-card .plan-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.pricing-card.featured {
+  background-color: var(--navy);
+  border-color: var(--navy);
+  color: var(--cream);
+}
+
+.pricing-card.featured .plan-name {
+  color: rgba(245, 240, 230, 0.6);
+}
+
+.pricing-card.featured .plan-price {
+  color: var(--yellow);
+}
+
+.pricing-card.featured .plan-desc {
+  color: rgba(245, 240, 230, 0.75);
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid rgba(15, 27, 51, 0.08);
+  padding: 32px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+footer a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Privacy / Terms pages */
+
+.legal-page {
+  padding: 48px 0 64px;
+}
+
+.legal-page h1 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.legal-page .last-updated {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.legal-page h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.legal-page p,
+.legal-page li {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.legal-page ul {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.legal-page a {
+  color: var(--navy);
+  font-weight: 500;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero .subhead {
+    font-size: 17px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: 16px;
+  }
+}
