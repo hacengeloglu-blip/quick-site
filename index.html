@@ -3,105 +3,355 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quick: Fast AI</title>
-  <meta name="description" content="AI that lives inside your phone. Skip the chat app. Double-tap. Ask. Continue." />
+  <title>Quick: Fast AI — AI that lives inside your phone.</title>
+  <meta name="description" content="Double-tap. Ask. Continue. Quick is the fastest way to AI, in any app, without switching." />
+  <meta name="theme-color" content="#FBF6E8" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Nav scroll state via minimal inline script */
+  </style>
 </head>
 <body>
 
-  <header>
-    <div class="container">
+<!-- NAV -->
+<nav class="site-nav" id="site-nav">
+  <div class="container">
+    <div class="nav-inner">
       <a class="wordmark" href="/">
-        <img src="assets/bolt.png" alt="Quick bolt icon" />
-        <span>Quick</span>
+        <img src="assets/bolt.png" alt="Quick bolt" />
+        Quick
       </a>
-      <nav>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </nav>
+      <div class="nav-links">
+        <a href="#pricing" class="nav-text-link">Pricing</a>
+        <a href="privacy.html" class="nav-text-link">Privacy</a>
+        <a href="terms.html" class="nav-text-link">Terms</a>
+        <span class="cta-pill">Coming to App Store</span>
+      </div>
     </div>
-  </header>
+  </div>
+</nav>
 
-  <main>
-
-    <!-- Hero -->
-    <section class="hero" style="border-top: none;">
-      <div class="container">
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <img class="hero-bolt" src="assets/bolt.png" alt="Quick" />
+        <span class="tagline-pill">
+          <span class="tagline-dot"></span>
+          iOS &middot; 12+ rated &middot; Powered by Gemini
+        </span>
+      </div>
+      <div class="hero-right">
         <h1>AI that lives inside your phone.</h1>
-        <p class="subhead">Skip the chat app. Double-tap. Ask. Continue.</p>
-        <a href="#" class="app-store">Coming Soon on the App Store</a>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section>
-      <div class="container">
-        <h2>How it works</h2>
-        <div class="steps">
-
-          <div class="step">
-            <img class="step-img" src="assets/bolt.png" alt="Bolt icon" />
-            <h3>Tap the back of your phone</h3>
-            <p>Assign Quick to Back Tap in Accessibility settings. One gesture, anywhere.</p>
-          </div>
-
-          <div class="step">
-            <svg class="icon-chat" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="40" height="40" rx="10" fill="#0F1B33" fill-opacity="0.06"/>
-              <path d="M10 14a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5l-4 3-4-3h-3a2 2 0 0 1-2-2V14z" stroke="#0F1B33" stroke-width="1.5" stroke-linejoin="round"/>
-              <path d="M14 18h12M14 22h8" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            <h3>Ask anything</h3>
-            <p>Type or speak your question. The AI sheet slides up right over whatever you were doing.</p>
-          </div>
-
-          <div class="step">
-            <svg class="icon-check" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="40" height="40" rx="10" fill="#0F1B33" fill-opacity="0.06"/>
-              <path d="M13 21l5 5 9-10" stroke="#0F1B33" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <h3>Get answers without leaving your app</h3>
-            <p>Answer streams inline. Dismiss and you are right back where you were.</p>
-          </div>
-
+        <p class="hero-subtitle">Skip the chat app. Double-tap. Ask. Continue.</p>
+        <div class="hero-actions">
+          <span class="btn-primary">Coming to App Store</span>
+          <a href="#how-it-works" class="btn-text">How it works &darr;</a>
         </div>
       </div>
-    </section>
-
-    <!-- Pricing -->
-    <section>
-      <div class="container">
-        <h2>Pricing</h2>
-        <div class="pricing-cards">
-
-          <div class="pricing-card">
-            <p class="plan-name">Free</p>
-            <p class="plan-price">$0</p>
-            <p class="plan-desc">10 questions per week. No credit card required. Try Quick before you commit.</p>
-          </div>
-
-          <div class="pricing-card featured">
-            <p class="plan-name">Pro</p>
-            <p class="plan-price">$4.99 / mo<br/><span style="font-size:18px; font-weight:600;">or $49.99 lifetime</span></p>
-            <p class="plan-desc">1.5 million tokens per month. Same model. No slowdown. Pay once, use forever.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>
-        &copy; 2026 Hookson Studio &middot;
-        <a href="mailto:support@hooksonstudio.com">support@hooksonstudio.com</a>
-        &middot; <a href="privacy.html">Privacy</a>
-        &middot; <a href="terms.html">Terms</a>
-      </p>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- PRODUCT MOMENT -->
+<section class="product-moment">
+  <div class="container">
+    <p class="section-eyebrow fade-in">The product moment</p>
+    <h2 class="fade-in">Three seconds. Without leaving the app you&rsquo;re in.</h2>
+    <p class="section-sub fade-in">Tap the back of your phone. The answer appears over whatever you&rsquo;re doing. No switching. No loading screen.</p>
+    <div class="phone-wrapper fade-in">
+      <div class="phone-svg-wrap">
+        <!-- Phone outline SVG -->
+        <svg class="phone-outline" viewBox="0 0 280 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="277" height="557" rx="38.5" fill="#0F1B33" stroke="#2A3A5A" stroke-width="3"/>
+          <!-- Side button -->
+          <rect x="277" y="140" width="5" height="60" rx="2.5" fill="#2A3A5A"/>
+          <!-- Volume buttons -->
+          <rect x="-2" y="130" width="5" height="44" rx="2.5" fill="#2A3A5A"/>
+          <rect x="-2" y="184" width="5" height="44" rx="2.5" fill="#2A3A5A"/>
+          <!-- Camera island -->
+          <rect x="100" y="10" width="80" height="18" rx="9" fill="#1A2745"/>
+          <!-- Home indicator -->
+          <rect x="110" y="536" width="60" height="4" rx="2" fill="#2A3A5A"/>
+        </svg>
+        <!-- Phone screen contents -->
+        <div class="phone-screen-area">
+          <!-- Frame 1: Instagram-like feed -->
+          <div class="phone-screen-feed">
+            <div class="feed-row">
+              <div class="feed-avatar"></div>
+              <div class="feed-name-stub"></div>
+            </div>
+            <div class="feed-img"></div>
+            <div class="feed-lines">
+              <div class="feed-line"></div>
+              <div class="feed-line short"></div>
+            </div>
+            <div class="feed-row">
+              <div class="feed-avatar"></div>
+              <div class="feed-name-stub"></div>
+            </div>
+            <div class="feed-img" style="height:90px;background:linear-gradient(135deg,#48484A,#2C2C2E)"></div>
+            <div class="feed-lines">
+              <div class="feed-line"></div>
+              <div class="feed-line short"></div>
+            </div>
+          </div>
+          <!-- Frame 2: tap ring -->
+          <div class="tap-ring">
+            <div class="tap-ring-circle"></div>
+          </div>
+          <!-- Frame 3: Quick sheet -->
+          <div class="phone-sheet">
+            <div class="sheet-handle"></div>
+            <div class="sheet-header">
+              <img class="sheet-bolt-img" src="assets/bolt.png" alt="" />
+              <span class="sheet-app-name">Quick</span>
+            </div>
+            <div class="sheet-divider"></div>
+            <div class="sheet-q">What&rsquo;s the boiling point of water?</div>
+            <div class="sheet-a">
+              <div class="sheet-a-label">Answer</div>
+              100&deg;C (212&deg;F) at sea level. At higher altitudes, lower atmospheric pressure reduces the boiling point.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <p class="section-eyebrow fade-in">How it works</p>
+    <h2 class="fade-in">Three steps. One motion.</h2>
+    <div class="cards-row">
+      <div class="card fade-in">
+        <div class="step-number">1</div>
+        <!-- Phone back-tap SVG -->
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="4" width="24" height="40" rx="6" fill="#F5F0E6" stroke="#0F1B33" stroke-width="2"/>
+          <circle cx="36" cy="20" r="7" fill="#F2CF4C" opacity="0.9"/>
+          <path d="M33 20l2 2 4-4" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="17" y="8" width="14" height="3" rx="1.5" fill="#E8E0CC"/>
+          <rect x="19" y="38" width="10" height="2" rx="1" fill="#E8E0CC"/>
+        </svg>
+        <h3>Tap the back of your phone.</h3>
+        <p>Set up Back Tap in iOS Settings once. From then on, two taps summons Quick from any screen.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="step-number">2</div>
+        <!-- Chat bubble + bolt SVG -->
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="8" width="36" height="26" rx="8" fill="#F2CF4C"/>
+          <path d="M12 38l4-4h20" stroke="#F2CF4C" stroke-width="3" stroke-linecap="round"/>
+          <path d="M25 14l-4 8h6l-4 8" stroke="#0F1B33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Ask anything.</h3>
+        <p>Type or speak your question. Quick streams the answer from Gemini in under a second.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="step-number">3</div>
+        <!-- Checkmark + return arrow SVG -->
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="18" fill="#F5F0E6" stroke="#0F1B33" stroke-width="2"/>
+          <path d="M16 24l6 6 10-12" stroke="#0F1B33" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M34 10c4 4 6 9 6 14" stroke="#F2CF4C" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3>Get answers without switching apps.</h3>
+        <p>Close the sheet. You&rsquo;re right back where you were. Context intact. No history to backtrack.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="comparison">
+  <div class="container">
+    <p class="section-eyebrow fade-in">Why Quick</p>
+    <h2 class="fade-in">Context lost is time lost.</h2>
+    <div class="comparison-grid fade-in">
+      <!-- Quick flow -->
+      <div class="flow-col quick">
+        <div class="flow-col-title">Quick</div>
+        <div class="flow-steps">
+          <span class="flow-badge accent">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="display:inline;vertical-align:middle;margin-right:3px"><rect width="12" height="12" rx="3" fill="#0F1B33" opacity="0.15"/><path d="M6 2l-1.5 3h3L6 10" stroke="#E8B72A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Quick
+          </span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-badge accent">Answer appears</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-badge accent">Back to app</span>
+        </div>
+        <p class="flow-caption">3 seconds. Same app.</p>
+      </div>
+      <!-- Divider -->
+      <div class="comparison-divider"></div>
+      <!-- Other AI flow -->
+      <div class="flow-col other">
+        <div class="flow-col-title">Other AI apps</div>
+        <div class="flow-steps">
+          <span class="flow-badge">Your app</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-badge dim">Home screen</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-badge dim">AI app loads</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-badge dim">Type again</span>
+          <span class="flow-arrow">&#8594;</span>
+          <span class="flow-badge dim">Switch back</span>
+        </div>
+        <p class="flow-caption">8+ seconds. Context lost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <p class="section-eyebrow fade-in">Pricing</p>
+    <h2 class="fade-in">Simple. Honest. Snack-tier.</h2>
+    <p class="section-sub fade-in">No trial. No bait. Pick the plan that fits.</p>
+    <div class="pricing-grid">
+      <!-- Free -->
+      <div class="pricing-card fade-in">
+        <p class="plan-tier">Free</p>
+        <div class="plan-price">$0</div>
+        <p class="plan-cadence">forever</p>
+        <div class="plan-features">
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            10 questions per week
+          </div>
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Back Tap, Siri, Action Button
+          </div>
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Full history
+          </div>
+        </div>
+        <p class="plan-note">Free questions reset weekly. No card required.</p>
+      </div>
+      <!-- Pro -->
+      <div class="pricing-card fade-in">
+        <p class="plan-tier">Pro</p>
+        <div class="plan-price">$4.99</div>
+        <p class="plan-cadence">per month</p>
+        <div class="plan-features">
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            1.5M tokens per month
+          </div>
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            About 2,000 questions
+          </div>
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Cancel anytime
+          </div>
+        </div>
+        <p class="plan-note">Reset monthly. Managed through App Store.</p>
+      </div>
+      <!-- Max -->
+      <div class="pricing-card recommended fade-in">
+        <div class="recommended-badge">Recommended</div>
+        <p class="plan-tier">Max</p>
+        <div class="plan-price">$49.99</div>
+        <p class="plan-cadence">one-time purchase</p>
+        <div class="plan-features">
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            1.5M tokens per month, forever
+          </div>
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            One-time. Yours forever.
+          </div>
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Same speed as Pro
+          </div>
+        </div>
+        <p class="plan-note">No subscription. No renewal. Pay once.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="container">
+    <div class="trust-inner">
+      <span class="trust-badge">
+        <svg viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5A6 6 0 1 1 7.5 13.5 6 6 0 0 1 7.5 1.5z" stroke="#0F1B33" stroke-width="1.2"/><path d="M7.5 5v4l2.5 1.5" stroke="#0F1B33" stroke-width="1.2" stroke-linecap="round"/></svg>
+        Powered by Gemini
+      </span>
+      <span class="trust-badge">
+        <svg viewBox="0 0 15 15" fill="none"><path d="M7.5 2L3 5v4c0 2.5 2 4.5 4.5 5 2.5-.5 4.5-2.5 4.5-5V5L7.5 2z" stroke="#0F1B33" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        Privacy-first
+      </span>
+      <span class="trust-badge">
+        <svg viewBox="0 0 15 15" fill="none"><rect x="3" y="2" width="9" height="11" rx="2.5" stroke="#0F1B33" stroke-width="1.2"/><rect x="5.5" y="1" width="4" height="2" rx="1" fill="#E8E0CC" stroke="#0F1B33" stroke-width="0.8"/></svg>
+        iOS native
+      </span>
+      <span class="trust-badge">
+        <svg viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="5" r="2.5" stroke="#0F1B33" stroke-width="1.2"/><path d="M2 13c0-3 2.5-4.5 5.5-4.5S13 10 13 13" stroke="#0F1B33" stroke-width="1.2" stroke-linecap="round"/></svg>
+        Indie &middot; Hookson Studio
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-col-title">Product</p>
+        <div class="footer-links">
+          <a href="#pricing">Pricing</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Support</p>
+        <div class="footer-links">
+          <a href="mailto:support@hooksonstudio.com">support@hooksonstudio.com</a>
+          <a href="mailto:support@hooksonstudio.com?subject=Report">Report an issue</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">About</p>
+        <div class="footer-links">
+          <a href="https://hooksonstudio.com" rel="noopener">Hookson Studio</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a class="footer-wordmark" href="/">
+        <img src="assets/bolt.png" alt="Quick" />
+        Quick
+      </a>
+      <p class="footer-copyright">&copy; 2026 Hookson Studio. Quick is iOS-only.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Minimal nav scroll script — one querySelector, no framework -->
+<script>
+(function(){
+  var nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', function(){ nav.classList.toggle('scrolled', window.scrollY > 8); }, {passive:true});
+})();
+</script>
 
 </body>
 </html>

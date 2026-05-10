@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - Quick: Fast AI</title>
-  <meta name="description" content="Quick privacy policy." />
+  <title>Privacy Policy &mdash; Quick: Fast AI</title>
+  <meta name="description" content="Quick privacy policy. We collect the minimum needed to run the service." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-    <div class="container">
+<nav class="site-nav scrolled" id="site-nav">
+  <div class="container">
+    <div class="nav-inner">
       <a class="wordmark" href="/">
-        <img src="assets/bolt.png" alt="Quick bolt icon" />
-        <span>Quick</span>
+        <img src="assets/bolt.png" alt="Quick bolt" />
+        Quick
       </a>
-      <nav>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-      </nav>
+      <div class="nav-links">
+        <a href="/#pricing" class="nav-text-link">Pricing</a>
+        <a href="privacy.html" class="nav-text-link">Privacy</a>
+        <a href="terms.html" class="nav-text-link">Terms</a>
+        <span class="cta-pill">Coming to App Store</span>
+      </div>
     </div>
-  </header>
+  </div>
+</nav>
 
-  <main>
-    <div class="container legal-page">
+<main class="legal-main">
+  <div class="container">
+    <div class="legal-content">
 
       <h1>Privacy Policy</h1>
       <p class="last-updated">Last updated: 2026-05-10</p>
@@ -36,7 +41,7 @@
       <ul>
         <li><strong>Account identity.</strong> When you sign in with Apple, we receive an anonymised user ID and, optionally, your name and email. We store the ID and a display name in our database. We never see your Apple ID credentials.</li>
         <li><strong>Your questions and answers.</strong> Each conversation thread -- your question and the AI-generated answer -- is stored in our database (Firebase Firestore) linked to your account so you can review your history.</li>
-        <li><strong>Subscription status.</strong> If you purchase Pro, RevenueCat (our payment processor) sends us a record of your entitlement. We store your subscription state to unlock Pro features. RevenueCat processes payments; we never touch your payment card details.</li>
+        <li><strong>Subscription status.</strong> If you purchase Pro or Max, RevenueCat (our payment processor) sends us a record of your entitlement. We store your subscription state to unlock features. RevenueCat processes payments; we never touch your payment card details.</li>
         <li><strong>Usage data.</strong> We record when you sent a question, the approximate token count, and whether the request succeeded. This powers rate limiting and lets us diagnose problems.</li>
         <li><strong>Crash reports.</strong> Firebase Crashlytics may collect anonymised crash traces if the app crashes. No question content is included in crash reports.</li>
       </ul>
@@ -74,18 +79,50 @@
       <p>Email <a href="mailto:support@hooksonstudio.com">support@hooksonstudio.com</a> with any privacy questions or requests.</p>
 
     </div>
-  </main>
+  </div>
+</main>
 
-  <footer>
-    <div class="container">
-      <p>
-        &copy; 2026 Hookson Studio &middot;
-        <a href="mailto:support@hooksonstudio.com">support@hooksonstudio.com</a>
-        &middot; <a href="privacy.html">Privacy</a>
-        &middot; <a href="terms.html">Terms</a>
-      </p>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-col-title">Product</p>
+        <div class="footer-links">
+          <a href="/#pricing">Pricing</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Support</p>
+        <div class="footer-links">
+          <a href="mailto:support@hooksonstudio.com">support@hooksonstudio.com</a>
+          <a href="mailto:support@hooksonstudio.com?subject=Report">Report an issue</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">About</p>
+        <div class="footer-links">
+          <a href="https://hooksonstudio.com" rel="noopener">Hookson Studio</a>
+        </div>
+      </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <a class="footer-wordmark" href="/">
+        <img src="assets/bolt.png" alt="Quick" />
+        Quick
+      </a>
+      <p class="footer-copyright">&copy; 2026 Hookson Studio. Quick is iOS-only.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', function(){ nav.classList.toggle('scrolled', window.scrollY > 8); }, {passive:true});
+})();
+</script>
 
 </body>
 </html>
