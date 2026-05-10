@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How usage works &mdash; Quick: Fast AI</title>
+  <meta name="description" content="Quick uses a weekly question budget. No daily resets, no waiting, no cooldowns." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="site-nav scrolled" id="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="wordmark" href="/">
+        <img src="assets/bolt.png" alt="Quick bolt" />
+        Quick
+      </a>
+      <div class="nav-links">
+        <a href="/#pricing" class="nav-text-link">Pricing</a>
+        <a href="usage.html" class="nav-text-link">Usage</a>
+        <a href="privacy.html" class="nav-text-link">Privacy</a>
+        <a href="terms.html" class="nav-text-link">Terms</a>
+        <span class="cta-pill">Coming to App Store</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="legal-main">
+  <div class="container">
+    <div class="legal-content">
+
+      <h1 aria-label="How usage works">How usage works.</h1>
+      <p class="last-updated">Quick uses a weekly question budget. No daily resets, no waiting, no cooldowns between questions.</p>
+
+      <h2>Your weekly cap</h2>
+      <p>Every plan gets a generous weekly question budget that resets every seven days on a rolling window &mdash; there's no fixed reset day, just a clean seven-day clock from your first question of the cycle.</p>
+      <ul>
+        <li><strong>Free</strong> &mdash; 20 questions / week</li>
+        <li><strong>Pro</strong> &mdash; 100 questions / week</li>
+        <li><strong>Max</strong> &mdash; 400 questions / week</li>
+      </ul>
+      <p>A "question" is one prompt that calls Quick and streams an answer back. Most questions take three seconds. Long-form answers count as one question regardless of length.</p>
+
+      <h2>What happens at the limit</h2>
+      <p>Below your cap: full speed.</p>
+      <p>Approaching your cap (above 80%): a small in-app banner reminds you.</p>
+      <p>At your cap: Quick switches to a faster, lighter model so you can keep going. You don't get blocked mid-question &mdash; ever.</p>
+      <p>This is a soft cap, not a hard wall. Most people never see it.</p>
+
+      <h2>Fair use</h2>
+      <p>Max gets a generous 400-questions-per-week cap because most users land closer to a hundred. Sustained heavy use beyond that may be throttled to keep the service fast for everyone. We'll never bill you a surprise fee &mdash; at worst, your speed drops slightly until the week resets.</p>
+
+      <h2>Why questions, not tokens</h2>
+      <p>Some AI apps measure usage in "tokens" &mdash; fragments of words. We think that's confusing. We measure in questions because that's what you actually do: ask a question, get an answer.</p>
+      <p>Internally we still track tokens to keep costs honest, but you'll never see the number. The question count is what matters.</p>
+
+      <h2>Reset cadence</h2>
+      <p>Your week is a rolling seven-day window. If you sent five questions last Monday, that bucket frees up next Monday &mdash; no waiting until the first of the month.</p>
+      <p>You can see your current usage anytime in the Quick app, under Settings &rarr; Usage.</p>
+
+      <p style="margin-top:48px"><a href="/">&larr; Back to Quick</a></p>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-col-title">Product</p>
+        <div class="footer-links">
+          <a href="/#pricing">Pricing</a>
+          <a href="usage.html">Usage</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Support</p>
+        <div class="footer-links">
+          <a href="mailto:support@hooksonstudio.com">support@hooksonstudio.com</a>
+          <a href="mailto:support@hooksonstudio.com?subject=Report">Report an issue</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">About</p>
+        <div class="footer-links">
+          <a href="https://hooksonstudio.com" rel="noopener">Hookson Studio</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a class="footer-wordmark" href="/">
+        <img src="assets/bolt.png" alt="Quick" />
+        Quick
+      </a>
+      <p class="footer-copyright">&copy; 2026 Hookson Studio. Quick is iOS-only.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', function(){ nav.classList.toggle('scrolled', window.scrollY > 8); }, {passive:true});
+})();
+</script>
+
+</body>
+</html>

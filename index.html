@@ -23,6 +23,7 @@
       </a>
       <div class="nav-links">
         <a href="#pricing" class="nav-text-link">Pricing</a>
+        <a href="usage.html" class="nav-text-link">Usage</a>
         <a href="privacy.html" class="nav-text-link">Privacy</a>
         <a href="terms.html" class="nav-text-link">Terms</a>
         <span class="cta-pill">Coming to App Store</span>
@@ -75,46 +76,13 @@
           <!-- Home indicator -->
           <rect x="110" y="536" width="60" height="4" rx="2" fill="#2A3A5A"/>
         </svg>
-        <!-- Phone screen contents -->
+        <!-- Phone screen contents (static placeholder) -->
         <div class="phone-screen-area">
-          <!-- Frame 1: Instagram-like feed -->
-          <div class="phone-screen-feed">
-            <div class="feed-row">
-              <div class="feed-avatar"></div>
-              <div class="feed-name-stub"></div>
-            </div>
-            <div class="feed-img"></div>
-            <div class="feed-lines">
-              <div class="feed-line"></div>
-              <div class="feed-line short"></div>
-            </div>
-            <div class="feed-row">
-              <div class="feed-avatar"></div>
-              <div class="feed-name-stub"></div>
-            </div>
-            <div class="feed-img" style="height:90px;background:linear-gradient(135deg,#48484A,#2C2C2E)"></div>
-            <div class="feed-lines">
-              <div class="feed-line"></div>
-              <div class="feed-line short"></div>
-            </div>
-          </div>
-          <!-- Frame 2: tap ring -->
-          <div class="tap-ring">
-            <div class="tap-ring-circle"></div>
-          </div>
-          <!-- Frame 3: Quick sheet -->
-          <div class="phone-sheet">
-            <div class="sheet-handle"></div>
-            <div class="sheet-header">
-              <img class="sheet-bolt-img" src="assets/bolt.png" alt="" />
-              <span class="sheet-app-name">Quick</span>
-            </div>
-            <div class="sheet-divider"></div>
-            <div class="sheet-q">What&rsquo;s the boiling point of water?</div>
-            <div class="sheet-a">
-              <div class="sheet-a-label">Answer</div>
-              100&deg;C (212&deg;F) at sea level. At higher altitudes, lower atmospheric pressure reduces the boiling point.
-            </div>
+          <div class="phone-placeholder">
+            <svg class="phone-placeholder-bolt" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="#F2CF4C" stroke="#F2CF4C" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <p class="phone-placeholder-caption">Screenshot coming soon</p>
           </div>
         </div>
       </div>
@@ -143,22 +111,21 @@
       </div>
       <div class="card fade-in">
         <div class="step-number">2</div>
-        <!-- Chat bubble + bolt SVG -->
+        <!-- Speech bubble SVG -->
         <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="4" y="8" width="36" height="26" rx="8" fill="#F2CF4C"/>
-          <path d="M12 38l4-4h20" stroke="#F2CF4C" stroke-width="3" stroke-linecap="round"/>
-          <path d="M25 14l-4 8h6l-4 8" stroke="#0F1B33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 12c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v16c0 2.2-1.8 4-4 4H20l-7 6v-6h-1c-2.2 0-4-1.8-4-4V12z" fill="#F2CF4C" stroke="#0F1B33" stroke-width="2" stroke-linejoin="round"/>
+          <line x1="15" y1="17" x2="33" y2="17" stroke="#0F1B33" stroke-width="2" stroke-linecap="round"/>
+          <line x1="15" y1="23" x2="29" y2="23" stroke="#0F1B33" stroke-width="2" stroke-linecap="round"/>
         </svg>
         <h3>Ask anything.</h3>
         <p>Type or speak your question. Quick streams the answer from Gemini in under a second.</p>
       </div>
       <div class="card fade-in">
         <div class="step-number">3</div>
-        <!-- Checkmark + return arrow SVG -->
+        <!-- Sparkle SVG -->
         <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="24" cy="24" r="18" fill="#F5F0E6" stroke="#0F1B33" stroke-width="2"/>
-          <path d="M16 24l6 6 10-12" stroke="#0F1B33" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M34 10c4 4 6 9 6 14" stroke="#F2CF4C" stroke-width="2" stroke-linecap="round"/>
+          <path d="M24 6l3.5 11L39 20.5 27.5 24 24 35l-3.5-11L9 20.5 20.5 17 24 6z" fill="#F2CF4C" stroke="#0F1B33" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M38 32l1.5 4.5L44 38l-4.5 1.5L38 44l-1.5-4.5L32 38l4.5-1.5L38 32z" fill="#F2CF4C" stroke="#0F1B33" stroke-width="1.5" stroke-linejoin="round"/>
         </svg>
         <h3>Get answers without switching apps.</h3>
         <p>Close the sheet. You&rsquo;re right back where you were. Context intact. No history to backtrack.</p>
@@ -204,7 +171,7 @@
           <span class="flow-arrow">&#8594;</span>
           <span class="flow-badge dim">Switch back</span>
         </div>
-        <p class="flow-caption">8+ seconds. Context lost.</p>
+        <p class="flow-caption">15+ seconds. Context lost.</p>
       </div>
     </div>
   </div>
@@ -225,18 +192,18 @@
         <div class="plan-features">
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            10 questions per week
+            20 questions per week
           </div>
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Back Tap, Siri, Action Button
+            Back Tap
           </div>
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Full history
           </div>
         </div>
-        <p class="plan-note">Free questions reset weekly. No card required.</p>
+        <p class="plan-note">Resets weekly. No card required.</p>
       </div>
       <!-- Pro -->
       <div class="pricing-card fade-in">
@@ -246,40 +213,41 @@
         <div class="plan-features">
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            1.5M tokens per month
+            100 questions per week
           </div>
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            About 2,000 questions
+            Back Tap
           </div>
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Cancel anytime
           </div>
         </div>
-        <p class="plan-note">Reset monthly. Managed through App Store.</p>
+        <p class="plan-note">Resets weekly. Managed through App Store.</p>
       </div>
       <!-- Max -->
       <div class="pricing-card recommended fade-in">
         <div class="recommended-badge">Recommended</div>
         <p class="plan-tier">Max</p>
-        <div class="plan-price">$49.99</div>
-        <p class="plan-cadence">one-time purchase</p>
+        <div class="plan-price">$40</div>
+        <p class="plan-cadence">per year</p>
+        <p class="plan-pitch">Cheaper than Pro. 4&times; the questions.</p>
         <div class="plan-features">
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            1.5M tokens per month, forever
+            400 questions per week
           </div>
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            One-time. Yours forever.
+            Back Tap
           </div>
           <div class="plan-feature">
             <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Same speed as Pro
           </div>
         </div>
-        <p class="plan-note">No subscription. No renewal. Pay once.</p>
+        <p class="plan-note">Resets weekly. Subject to fair use. Auto-renews yearly.</p>
       </div>
     </div>
   </div>
@@ -317,6 +285,7 @@
         <p class="footer-col-title">Product</p>
         <div class="footer-links">
           <a href="#pricing">Pricing</a>
+          <a href="usage.html">Usage</a>
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>
         </div>
