@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How usage works &mdash; Quick: Fast AI</title>
-  <meta name="description" content="Quick uses a weekly question budget. No daily resets, no waiting, no cooldowns." />
+  <meta name="description" content="Quick uses a weekly token budget. No daily resets, no waiting, no cooldowns." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -32,32 +32,31 @@
     <div class="legal-content">
 
       <h1 aria-label="How usage works">How usage works.</h1>
-      <p class="last-updated">Quick uses a weekly question budget. No daily resets, no waiting, no cooldowns between questions.</p>
+      <p class="last-updated">Quick uses a weekly token budget. No daily resets, no waiting, no cooldowns between answers.</p>
 
       <h2>Your weekly cap</h2>
-      <p>Every plan gets a generous weekly question budget that resets every seven days on a rolling window &mdash; there's no fixed reset day, just a clean seven-day clock from your first question of the cycle.</p>
+      <p>Every plan gets a generous weekly token budget that resets every seven days on a rolling window &mdash; there's no fixed reset day, just a clean seven-day clock from your first answer of the cycle.</p>
       <ul>
-        <li><strong>Free</strong> &mdash; 20 questions / week</li>
-        <li><strong>Pro</strong> &mdash; 100 questions / week</li>
-        <li><strong>Max</strong> &mdash; 400 questions / week</li>
+        <li><strong>Free</strong> &mdash; 15,000 tokens / week</li>
+        <li><strong>Pro</strong> &mdash; 75,000 tokens / week</li>
+        <li><strong>Max</strong> &mdash; 300,000 tokens / week</li>
       </ul>
-      <p>A "question" is one prompt that calls Quick and streams an answer back. Most questions take three seconds. Long-form answers count as one question regardless of length.</p>
+      <p>A token is roughly three-quarters of a word. A short answer might use a few hundred tokens; a long, detailed one might use a few thousand. You'll see your real-time usage in the app under Settings &rarr; Usage.</p>
 
       <h2>What happens at the limit</h2>
       <p>Below your cap: full speed.</p>
       <p>Approaching your cap (above 80%): a small in-app banner reminds you.</p>
-      <p>At your cap: Quick switches to a faster, lighter model so you can keep going. You don't get blocked mid-question &mdash; ever.</p>
+      <p>At your cap: Quick switches to a faster, lighter model so you can keep going. You don't get blocked mid-answer &mdash; ever.</p>
       <p>This is a soft cap, not a hard wall. Most people never see it.</p>
 
       <h2>Fair use</h2>
-      <p>Max gets a generous 400-questions-per-week cap because most users land closer to a hundred. Sustained heavy use beyond that may be throttled to keep the service fast for everyone. We'll never bill you a surprise fee &mdash; at worst, your speed drops slightly until the week resets.</p>
+      <p>Max gets a generous 300,000-tokens-per-week cap because most users land closer to a third of that. Sustained heavy use beyond the cap may be throttled to keep the service fast for everyone. We'll never bill you a surprise fee &mdash; at worst, your speed drops slightly until the week resets.</p>
 
-      <h2>Why questions, not tokens</h2>
-      <p>Some AI apps measure usage in "tokens" &mdash; fragments of words. We think that's confusing. We measure in questions because that's what you actually do: ask a question, get an answer.</p>
-      <p>Internally we still track tokens to keep costs honest, but you'll never see the number. The question count is what matters.</p>
+      <h2>Why tokens</h2>
+      <p>Tokens are how every modern AI model actually measures work &mdash; bits of words and punctuation that map directly to compute cost. We show you the same number we use to plan capacity, so what you see is the truth, not a marketing abstraction.</p>
 
       <h2>Reset cadence</h2>
-      <p>Your week is a rolling seven-day window. If you sent five questions last Monday, that bucket frees up next Monday &mdash; no waiting until the first of the month.</p>
+      <p>Your week is a rolling seven-day window. If you used 12,000 tokens last Monday, that bucket frees up next Monday &mdash; no waiting until the first of the month.</p>
       <p>You can see your current usage anytime in the Quick app, under Settings &rarr; Usage.</p>
 
       <p style="margin-top:48px"><a href="/">&larr; Back to Quick</a></p>
