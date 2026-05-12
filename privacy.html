@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy &mdash; Quick: Fast AI</title>
+  <title>Privacy Policy. Quick: Fast AI</title>
   <meta name="description" content="Quick privacy policy. We collect the minimum needed to run the service." />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -32,7 +32,7 @@
     <div class="legal-content">
 
       <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: 2026-05-10</p>
+      <p class="last-updated">Last updated: 2026-05-12</p>
 
       <h2>Who we are</h2>
       <p>Quick is made by Hookson Studio. Questions? Email <a href="mailto:support@hooksonstudio.com">support@hooksonstudio.com</a>.</p>
@@ -41,7 +41,7 @@
       <p>We collect the minimum needed to run the service:</p>
       <ul>
         <li><strong>Account identity.</strong> When you sign in with Apple, we receive an anonymised user ID and, optionally, your name and email. We store the ID and a display name in our database. We never see your Apple ID credentials.</li>
-        <li><strong>Your questions and answers.</strong> Each conversation thread -- your question and the AI-generated answer -- is stored in our database (Firebase Firestore) linked to your account so you can review your history.</li>
+        <li><strong>Your questions and answers.</strong> Each conversation thread, your question and the AI-generated answer, is stored in our database (Firebase Firestore) linked to your account so you can review your history.</li>
         <li><strong>Subscription status.</strong> If you purchase Pro or Max, RevenueCat (our payment processor) sends us a record of your entitlement. We store your subscription state to enable Pro and Max features. RevenueCat processes payments; we never touch your payment card details.</li>
         <li><strong>Usage data.</strong> We record when you sent a question, the approximate token count, and whether the request succeeded. This powers rate limiting and lets us diagnose problems.</li>
         <li><strong>Crash reports.</strong> Firebase Crashlytics may collect anonymised crash traces if the app crashes. No question content is included in crash reports.</li>
@@ -58,10 +58,11 @@
       <h2>Service providers</h2>
       <p>We share data with these providers solely to operate the service:</p>
       <ul>
-        <li><strong>Google Firebase</strong> -- authentication, database, crash reporting.</li>
-        <li><strong>Google Gemini</strong> -- your questions are sent to Gemini to generate answers. Google's data-use policies apply to the content of requests.</li>
-        <li><strong>RevenueCat</strong> -- subscription management and receipt verification.</li>
-        <li><strong>Cloudflare</strong> -- our backend runs on Cloudflare Workers. Cloudflare may log request metadata (IP, timestamp) per their standard policies.</li>
+        <li><strong>Google Firebase.</strong> Authentication, database, crash reporting.</li>
+        <li><strong>Firebase App Check.</strong> Verifies requests come from a genuine copy of the Quick app to prevent abuse.</li>
+        <li><strong>Google Gemini.</strong> Your questions are sent to Gemini to generate answers. Google's data-use policies apply to the content of requests.</li>
+        <li><strong>RevenueCat.</strong> Subscription management and receipt verification.</li>
+        <li><strong>Cloudflare.</strong> Our backend runs on Cloudflare Workers. Cloudflare may log request metadata (IP, timestamp) per their standard policies.</li>
       </ul>
 
       <h2>Data retention and deletion</h2>
@@ -71,7 +72,7 @@
       <p>All data is transmitted over HTTPS. Authentication uses Apple Sign-In with short-lived tokens. We do not store passwords. Firestore security rules restrict each user to their own data.</p>
 
       <h2>Children</h2>
-      <p>Quick is rated 12+ on the App Store. We do not knowingly collect data from children under 13.</p>
+      <p>Quick is intended for users 13 and older. We do not knowingly collect data from children under 13.</p>
 
       <h2>Changes to this policy</h2>
       <p>If we make material changes, we will update the "Last updated" date above. Continued use of the app after a change constitutes acceptance.</p>
