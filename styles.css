@@ -315,6 +315,8 @@ section { padding: var(--sp-8) 0; }
   text-decoration-color:var(--yellow-deep); text-underline-offset:3px; transition:color 160ms ease;
 }
 .legal-content a:hover { color:var(--yellow-deep); }
+.legal-back { margin-top: var(--sp-7); }
+[aria-current="page"] { opacity: 1 !important; color: var(--yellow-deep); }
 
 /* REDUCED MOTION */
 @media (prefers-reduced-motion: reduce) {
