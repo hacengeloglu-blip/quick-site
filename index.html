@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quick: Fast AI. AI that lives inside your phone.</title>
-  <meta name="description" content="Double-tap. Ask. Continue. Quick is the fastest way to AI on iPhone." />
+  <title>QuickAI · AI that lives inside your phone.</title>
+  <meta name="description" content="Double-tap. Ask. Continue. The fastest way to AI on iPhone." />
   <meta name="theme-color" content="#FBF6E8" />
+  <meta property="og:title" content="QuickAI · AI that lives inside your phone." />
+  <meta property="og:description" content="Double-tap. Ask. Continue." />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Nav scroll state via minimal inline script */
-  </style>
+  <link rel="icon" type="image/png" href="assets/bolt.png" />
 </head>
 <body>
 
@@ -18,14 +19,14 @@
   <div class="container">
     <div class="nav-inner">
       <a class="wordmark" href="/">
-        <img src="assets/bolt.png" alt="Quick bolt" />
-        Quick
+        <img src="assets/bolt.png" alt="" />
+        QuickAI
       </a>
       <div class="nav-links">
+        <a href="#how" class="nav-text-link">How</a>
         <a href="#pricing" class="nav-text-link">Pricing</a>
         <a href="usage.html" class="nav-text-link">Usage</a>
         <a href="privacy.html" class="nav-text-link">Privacy</a>
-        <a href="terms.html" class="nav-text-link">Terms</a>
         <span class="cta-pill">Coming to App Store</span>
       </div>
     </div>
@@ -37,65 +38,50 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-left">
-        <img class="hero-bolt" src="assets/bolt.png" alt="Quick" />
+        <img class="hero-bolt" src="assets/bolt.png" alt="" />
       </div>
       <div class="hero-right">
-        <h1>AI that lives inside your phone.</h1>
-        <p class="hero-subtitle">Skip the chat app. Double-tap. Ask. Continue.</p>
+        <p class="hero-eyebrow">Sick of big, slow chat apps?</p>
+        <h1>Knowledge fast. From any screen.</h1>
+        <p class="hero-subtitle">Double-tap the back of your phone. QuickAI opens. Ask. Answer in about a second. Back to whatever you were doing.</p>
         <div class="hero-actions">
           <span class="btn-primary">Coming to App Store</span>
-          <a href="#how-it-works" class="btn-text">How it works &darr;</a>
+          <a href="#how" class="btn-text">See how it works &darr;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCT MOMENT -->
-<section class="product-moment">
+<!-- MANIFESTO -->
+<section class="manifesto">
   <div class="container">
-    <p class="section-eyebrow fade-in">The product moment</p>
-    <h2 class="fade-in">Double tap. Ask. Continue.</h2>
-    <p class="section-sub fade-in">Tap the back of your phone. Quick opens, ready, in about a second. New chat, keyboard up.</p>
-    <div class="phone-wrapper fade-in">
-      <div class="phone-svg-wrap">
-        <!-- Phone outline SVG -->
-        <svg class="phone-outline" viewBox="0 0 280 560" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1.5" y="1.5" width="277" height="557" rx="38.5" fill="#0F1B33" stroke="#2A3A5A" stroke-width="3"/>
-          <!-- Side button -->
-          <rect x="277" y="140" width="5" height="60" rx="2.5" fill="#2A3A5A"/>
-          <!-- Volume buttons -->
-          <rect x="-2" y="130" width="5" height="44" rx="2.5" fill="#2A3A5A"/>
-          <rect x="-2" y="184" width="5" height="44" rx="2.5" fill="#2A3A5A"/>
-          <!-- Camera island -->
-          <rect x="100" y="10" width="80" height="18" rx="9" fill="#1A2745"/>
-          <!-- Home indicator -->
-          <rect x="110" y="536" width="60" height="4" rx="2" fill="#2A3A5A"/>
-        </svg>
-        <!-- Phone screen contents (static placeholder) -->
-        <div class="phone-screen-area">
-          <div class="phone-placeholder">
-            <svg class="phone-placeholder-bolt" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="#F2CF4C" stroke="#F2CF4C" stroke-width="1.5" stroke-linejoin="round"/>
-            </svg>
-            <p class="phone-placeholder-caption">Screenshot coming soon</p>
-          </div>
-        </div>
-      </div>
+    <p class="manifesto-eyebrow fade-in">Why QuickAI</p>
+    <div class="manifesto-list">
+      <p class="manifesto-line fade-in">The chat apps want your day. QuickAI wants your second.</p>
+      <p class="manifesto-line fade-in">No sidebar. No feed. No agentic loop. No upsell carousel.</p>
+      <p class="manifesto-line fade-in">Open it from any screen. Or never open it. Both are fine.</p>
     </div>
+  </div>
+</section>
+
+<!-- ANCHOR LINE -->
+<section class="anchor">
+  <div class="container">
+    <p class="anchor-line">Stripped to the second.</p>
+    <p class="anchor-sub">A quick answer to a quick question. Then back to whatever you were doing.</p>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="how-it-works" id="how-it-works">
+<section class="how-it-works" id="how">
   <div class="container">
     <p class="section-eyebrow fade-in">How it works</p>
     <h2 class="fade-in">Three steps. One motion.</h2>
     <div class="cards-row">
       <div class="card fade-in">
         <div class="step-number">1</div>
-        <!-- Phone back-tap SVG -->
-        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="12" y="4" width="24" height="40" rx="6" fill="#F5F0E6" stroke="#0F1B33" stroke-width="2"/>
           <circle cx="36" cy="20" r="7" fill="#F2CF4C" opacity="0.9"/>
           <path d="M33 20l2 2 4-4" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -103,28 +89,26 @@
           <rect x="19" y="38" width="10" height="2" rx="1" fill="#E8E0CC"/>
         </svg>
         <h3>Tap the back of your phone.</h3>
-        <p>Set up Back Tap in iOS Settings once. From then on, two taps summons Quick from any screen.</p>
+        <p>Set up Back Tap in iOS Settings once. Two taps then summons QuickAI from any screen, in any app.</p>
       </div>
       <div class="card fade-in">
         <div class="step-number">2</div>
-        <!-- Speech bubble SVG -->
-        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M8 12c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v16c0 2.2-1.8 4-4 4H20l-7 6v-6h-1c-2.2 0-4-1.8-4-4V12z" fill="#F2CF4C" stroke="#0F1B33" stroke-width="2" stroke-linejoin="round"/>
           <line x1="15" y1="17" x2="33" y2="17" stroke="#0F1B33" stroke-width="2" stroke-linecap="round"/>
           <line x1="15" y1="23" x2="29" y2="23" stroke="#0F1B33" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <h3>Ask anything.</h3>
-        <p>Type or speak your question. Quick streams the answer from Gemini in under a second.</p>
+        <h3>Type your question.</h3>
+        <p>QuickAI streams the answer from Gemini in under a second. Short questions get short answers.</p>
       </div>
       <div class="card fade-in">
         <div class="step-number">3</div>
-        <!-- Sparkle SVG -->
-        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M24 6l3.5 11L39 20.5 27.5 24 24 35l-3.5-11L9 20.5 20.5 17 24 6z" fill="#F2CF4C" stroke="#0F1B33" stroke-width="2" stroke-linejoin="round"/>
           <path d="M38 32l1.5 4.5L44 38l-4.5 1.5L38 44l-1.5-4.5L32 38l4.5-1.5L38 32z" fill="#F2CF4C" stroke="#0F1B33" stroke-width="1.5" stroke-linejoin="round"/>
         </svg>
         <h3>Read. Close. Continue.</h3>
-        <p>Get your answer and head back to what you were doing. No history to backtrack.</p>
+        <p>You came in for an answer, not a conversation. Get it, then keep doing what you were doing.</p>
       </div>
     </div>
   </div>
@@ -134,74 +118,79 @@
 <section class="pricing" id="pricing">
   <div class="container">
     <p class="section-eyebrow fade-in">Pricing</p>
-    <h2 class="fade-in">Simple. Honest. Snack-tier.</h2>
-    <p class="section-sub fade-in">No trial. No bait. Pick the plan that fits.</p>
+    <h2 class="fade-in">Pick the size of your week.</h2>
+    <p class="section-sub fade-in">Three plans, one shape. Pricing shown in the App Store in your local currency. No trial. No bait.</p>
     <div class="pricing-grid">
+
       <!-- Free -->
       <div class="pricing-card fade-in">
         <p class="plan-tier">Free</p>
-        <div class="plan-price">$0</div>
-        <p class="plan-cadence">forever</p>
+        <div class="plan-headline">5,000</div>
+        <p class="plan-cadence">tokens / week</p>
         <div class="plan-features">
           <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            5,000 tokens per week
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Back Tap from any screen
           </div>
           <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Back Tap
-          </div>
-          <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Full history
           </div>
+          <div class="plan-feature">
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            No card required
+          </div>
         </div>
-        <p class="plan-note">Resets weekly. No card required.</p>
+        <p class="plan-note">Resets on a rolling 7-day window.</p>
       </div>
+
       <!-- Pro -->
       <div class="pricing-card fade-in">
         <p class="plan-tier">Pro</p>
-        <div class="plan-price">$1.99</div>
-        <p class="plan-cadence">per month, or $14.99 per year</p>
+        <div class="plan-headline">50,000</div>
+        <p class="plan-cadence">tokens / week &middot; 10&times; Free</p>
         <div class="plan-features">
           <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            50,000 tokens per week
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Everything in Free
           </div>
           <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Back Tap
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Monthly or yearly
           </div>
           <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="#E8E0CC"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#0F1B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Cancel anytime
           </div>
         </div>
-        <p class="plan-note">Resets weekly. Managed through App Store.</p>
+        <p class="plan-note">Local pricing via the App Store.</p>
       </div>
+
       <!-- Max -->
       <div class="pricing-card recommended fade-in">
         <div class="recommended-badge">Recommended</div>
         <p class="plan-tier">Max</p>
-        <div class="plan-price">$4.99</div>
-        <p class="plan-cadence">per month, or $24.99 per year</p>
+        <div class="plan-headline">100,000</div>
+        <p class="plan-cadence">tokens / week &middot; 20&times; Free</p>
         <div class="plan-features">
           <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            100,000 tokens per week
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Everything in Pro
           </div>
           <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Back Tap
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Headroom for heavy weeks
           </div>
           <div class="plan-feature">
-            <svg class="check-icon" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="check-icon" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8.5" stroke="rgba(255,255,255,0.2)"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#F2CF4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Same speed as Pro
           </div>
         </div>
-        <p class="plan-note">Resets weekly. Auto-renews.</p>
+        <p class="plan-note">Local pricing via the App Store.</p>
       </div>
+
     </div>
+    <p class="pricing-fineprint fade-in">Auto-renewing. Manage anytime in App Store &rsaquo; Subscriptions.</p>
   </div>
 </section>
 
@@ -210,19 +199,19 @@
   <div class="container">
     <div class="trust-inner">
       <span class="trust-badge">
-        <svg viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5A6 6 0 1 1 7.5 13.5 6 6 0 0 1 7.5 1.5z" stroke="#0F1B33" stroke-width="1.2"/><path d="M7.5 5v4l2.5 1.5" stroke="#0F1B33" stroke-width="1.2" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M7.5 1.5A6 6 0 1 1 7.5 13.5 6 6 0 0 1 7.5 1.5z" stroke="#0F1B33" stroke-width="1.2"/><path d="M7.5 5v4l2.5 1.5" stroke="#0F1B33" stroke-width="1.2" stroke-linecap="round"/></svg>
         Powered by Gemini
       </span>
       <span class="trust-badge">
-        <svg viewBox="0 0 15 15" fill="none"><path d="M7.5 2L3 5v4c0 2.5 2 4.5 4.5 5 2.5-.5 4.5-2.5 4.5-5V5L7.5 2z" stroke="#0F1B33" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M7.5 2L3 5v4c0 2.5 2 4.5 4.5 5 2.5-.5 4.5-2.5 4.5-5V5L7.5 2z" stroke="#0F1B33" stroke-width="1.2" stroke-linejoin="round"/></svg>
         Privacy-first
       </span>
       <span class="trust-badge">
-        <svg viewBox="0 0 15 15" fill="none"><rect x="3" y="2" width="9" height="11" rx="2.5" stroke="#0F1B33" stroke-width="1.2"/><rect x="5.5" y="1" width="4" height="2" rx="1" fill="#E8E0CC" stroke="#0F1B33" stroke-width="0.8"/></svg>
+        <svg viewBox="0 0 15 15" fill="none" aria-hidden="true"><rect x="3" y="2" width="9" height="11" rx="2.5" stroke="#0F1B33" stroke-width="1.2"/><rect x="5.5" y="1" width="4" height="2" rx="1" fill="#E8E0CC" stroke="#0F1B33" stroke-width="0.8"/></svg>
         iOS native
       </span>
       <span class="trust-badge">
-        <svg viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="5" r="2.5" stroke="#0F1B33" stroke-width="1.2"/><path d="M2 13c0-3 2.5-4.5 5.5-4.5S13 10 13 13" stroke="#0F1B33" stroke-width="1.2" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 15 15" fill="none" aria-hidden="true"><circle cx="7.5" cy="5" r="2.5" stroke="#0F1B33" stroke-width="1.2"/><path d="M2 13c0-3 2.5-4.5 5.5-4.5S13 10 13 13" stroke="#0F1B33" stroke-width="1.2" stroke-linecap="round"/></svg>
         Indie &middot; Hookson Studio
       </span>
     </div>
@@ -236,8 +225,14 @@
       <div>
         <p class="footer-col-title">Product</p>
         <div class="footer-links">
+          <a href="#how">How</a>
           <a href="#pricing">Pricing</a>
           <a href="usage.html">Usage</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Legal</p>
+        <div class="footer-links">
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>
         </div>
@@ -249,24 +244,17 @@
           <a href="mailto:support@hooksonstudio.com?subject=Report">Report an issue</a>
         </div>
       </div>
-      <div>
-        <p class="footer-col-title">About</p>
-        <div class="footer-links">
-          <a href="https://hooksonstudio.com" rel="noopener">Hookson Studio</a>
-        </div>
-      </div>
     </div>
     <div class="footer-bottom">
       <a class="footer-wordmark" href="/">
-        <img src="assets/bolt.png" alt="Quick" />
-        Quick
+        <img src="assets/bolt.png" alt="" />
+        QuickAI
       </a>
-      <p class="footer-copyright">&copy; 2026 Hookson Studio. Quick is iOS-only.</p>
+      <p class="footer-copyright">&copy; 2026 Hookson Studio &middot; iOS only</p>
     </div>
   </div>
 </footer>
 
-<!-- Minimal nav scroll script. one querySelector, no framework -->
 <script>
 (function(){
   var nav = document.getElementById('site-nav');
