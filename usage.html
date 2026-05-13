@@ -46,7 +46,7 @@
       <p>A token is roughly three-quarters of a word. A short answer might use a few hundred tokens; a long, detailed one a few thousand. You can see real-time usage in the app under Settings &rsaquo; Usage.</p>
 
       <h2>What happens at the limit</h2>
-      <p>Speed stays the same from 0% to 100%. At 75%, a heads-up banner appears so you can pace yourself or upgrade. At 100%, new requests are blocked until your cap resets. Any answer already streaming finishes normally. No model swap, no throttle, no cooldown. The number is the meter, and we tell you the truth about it.</p>
+      <p>Speed stays the same from 0% to 100%. At 80%, a heads-up banner appears so you can pace yourself or upgrade. At 100%, new requests are blocked until your cap resets. Any answer already streaming finishes normally. No model swap, no throttle, no cooldown. The number is the meter, and we tell you the truth about it.</p>
 
       <h2>Why tokens</h2>
       <p>Tokens are how every modern AI model actually measures work, bits of words and punctuation that map directly to compute cost. We show you the same number we use to plan capacity, so what you see is the truth, not a marketing abstraction.</p>
@@ -96,12 +96,7 @@
   </div>
 </footer>
 
-<script>
-(function(){
-  var nav = document.getElementById('site-nav');
-  window.addEventListener('scroll', function(){ nav.classList.toggle('scrolled', window.scrollY > 8); }, {passive:true});
-})();
-</script>
+<script src="scripts.js" defer></script>
 
 </body>
 </html>
